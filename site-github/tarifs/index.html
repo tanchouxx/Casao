@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Casao – Tarifs</title>
+<link rel="stylesheet" href="../assets/casao.css">
+</head>
+<body>
+
+<div class="alert gut">Fausses annonces, faux contacts : <a href="../alerte-fraudes/">nos conseils de vigilance</a></div>
+
+<header class="gut">
+  <div class="wrap">
+    <div class="hd">
+      <a class="logo" href="../accueil/" aria-label="Casao, accueil"><b>casao</b><span>GESTION LOCATIVE</span></a>
+      <nav class="top" aria-label="Navigation principale">
+        <a class="lk" href="../gestion-locative-bordeaux/">Gestion locative</a>
+        <a class="lk" href="../location/">Louer</a>
+        <a class="lk" href="../tarifs/">Tarifs</a>
+        <a class="lk" href="../nos-outils/">Nos outils</a>
+        <a class="lk" href="../contact/">Contact</a>
+        <a class="btn btn-o" href="https://app.oskar.immo/auth/login/">Se connecter</a>
+        <a class="btn btn-g" href="../contact/">Confier mon bien</a>
+        <button class="burger" id="burger" aria-expanded="false" aria-controls="mnav">Menu</button>
+      </nav>
+    </div>
+    <div class="mnav" id="mnav">
+      <a href="../gestion-locative-bordeaux/">Gestion locative</a>
+      <a href="../location/">Louer</a>
+      <a href="../tarifs/">Tarifs</a>
+      <a href="../nos-outils/">Nos outils</a>
+      <a href="../contact/">Contact</a>
+      <a href="https://app.oskar.immo/auth/login/">Se connecter (espace client)</a>
+    </div>
+  </div>
+</header>
+
+<div class="hero gut price-hero">
+  <div class="wrap">
+    <div class="deco" aria-hidden="true">%</div>
+    <div class="crumb"><a href="../accueil/">Accueil</a> &nbsp;›&nbsp; Tarifs</div>
+    <p class="kicker">Honoraires 2026 · tous nos prix sont TTC</p>
+    <h1>Tarifs de gestion locative<br>à Bordeaux : dès 5,9 % TTC</h1>
+    <p class="lead">Des honoraires publiés, sans frais cachés. Calculez votre coût en 10 secondes, comparez ce qui est inclus, et profitez de notre offre de lancement.</p>
+    <div class="launch">
+      <div class="tag-off"><span class="tilt">Offre de lancement</span><b>1re mise en location offerte</b><small>pour tout bien confié en gestion</small></div>
+      <div class="tag-off"><span class="tilt">Offre de lancement</span><b>2 mois de gestion offerts</b><small>biens confiés avec engagement</small></div>
+    </div>
+  </div>
+</div>
+
+<div class="gut">
+  <div class="wrap">
+    <section class="calc" id="simulateur">
+      <div class="calc-in">
+        <p class="eyebrow">Simulateur d'honoraires</p>
+        <h2>Combien coûte la gestion de votre bien ?</h2>
+        <form id="cf" novalidate>
+          <div class="fld"><label for="c-loyer">Loyer mensuel charges comprises</label>
+            <div class="unit"><input id="c-loyer" type="number" inputmode="numeric" min="100" max="10000" step="10" value="850"><span>€</span></div>
+            <input id="c-range" type="range" min="300" max="3000" step="10" value="850" aria-label="Loyer mensuel"></div>
+          <label class="tg"><input type="checkbox" id="c-gli"> Ajouter la garantie loyers impayés (2,5 % TTC)</label>
+          <label class="tg"><input type="checkbox" id="c-off" checked> Appliquer l'offre de lancement (2 mois offerts)</label>
+        </form>
+      </div>
+      <div class="calc-out" aria-live="polite">
+        <div class="co-rate"><span>Taux appliqué</span><b id="o-taux">6,4 %</b><small id="o-tr">tranche 801 € à 1 700 €</small></div>
+        <div class="co-main"><span>Honoraires de gestion</span><b id="o-mois">54 €</b><small>TTC par mois</small></div>
+        <div class="co-sub"><div><span>Sur un an</span><b id="o-an">650 €</b></div><div><span>Mise en location</span><b id="o-mel">Offerte</b></div></div>
+        <p class="small" id="o-note">Minimum de facturation : 39 € TTC par mois et par bien. Honoraires déductibles de vos revenus fonciers au régime réel.</p>
+      </div>
+    </section>
+
+    <section class="bareme" id="gestion">
+      <div class="b-head"><div><p class="eyebrow">Gestion courante</p><h2>Barème des honoraires de gestion</h2></div>
+        <p>Un pourcentage des sommes encaissées (loyer et charges). Plus le loyer est élevé, plus le taux baisse.</p></div>
+      <div class="tiers">
+        <div class="tier"><span class="t-r">Loyer jusqu'à 800 €</span><b>6,9 %</b><small>TTC des sommes encaissées</small></div>
+        <div class="tier"><span class="t-r">De 801 € à 1 700 €</span><b>6,4 %</b><small>TTC des sommes encaissées</small></div>
+        <div class="tier best"><span class="t-r">À partir de 1 701 €</span><b>5,9 %</b><small>TTC des sommes encaissées</small></div>
+      </div>
+      <p class="small">Minimum : <b>39 € TTC</b> par mois et par lot <span class="todo">[le site actuel indique 40 € : à harmoniser]</span>.</p>
+      <div class="incl">
+        <div><h3>Inclus dans la gestion</h3><ul class="ok-l"><li>Encaissement des loyers et relances</li><li>Quittances et duplicatas</li><li>Révision annuelle du loyer (IRL)</li><li>Régularisation des charges</li><li>Espace en ligne propriétaire et locataire</li><li>Signatures électroniques</li><li>Photos et visite virtuelle du bien</li><li>Avis de valeur vénale (1 tous les 18 mois)</li><li>Aide à la déclaration fiscale annuelle</li><li>Suivi des diagnostics</li><li>Étude des augmentations de loyer</li><li>Travaux jusqu'à 500 € TTC</li></ul></div>
+        <div class="gift"><h3>Offerts</h3><ul class="ok-l"><li>Dossier de permis de louer</li><li>État des lieux de sortie</li></ul>
+          <div class="gli"><span class="eyebrow">Option</span><b>Garantie loyers impayés et dégradations</b><span class="pct">2,5 %</span><small>TTC des sommes quittancées</small></div></div>
+      </div>
+    </section>
+
+    <section class="mel" id="location">
+      <p class="eyebrow">Mise en location (bail d'habitation, loi du 6 juillet 1989)</p>
+      <h2>Trouver le bon locataire</h2>
+      <div class="mel-g">
+        <div class="mel-c"><h3>Côté propriétaire</h3>
+          <div class="big-line"><b>80 %</b><span>d'un mois de loyer CC, pour un bien confié en gestion. <em>La 1re est offerte.</em></span></div>
+          <div class="big-line"><b>100 %</b><span>d'un mois de loyer CC pour une location seule, sans gestion.</span></div>
+          <p class="small">Estimation du loyer, annonce, visites, sélection des candidats, bail, état des lieux d'entrée, remise des clés.</p>
+        </div>
+        <div class="mel-c"><h3>Côté locataire</h3>
+          <p class="small">Plafonds légaux revalorisés au 1er janvier 2026. Bordeaux est en zone tendue.</p>
+          <table class="t-loc"><thead><tr><th>Zone</th><th>Visite, dossier, bail</th><th>État des lieux</th></tr></thead>
+          <tbody><tr class="hl"><td>Zone tendue (Bordeaux Métropole)</td><td>10,09 € / m²</td><td>3,03 € / m²</td></tr>
+          <tr><td>Zone très tendue</td><td>12,10 € / m²</td><td>3,03 € / m²</td></tr>
+          <tr><td>Hors zone tendue</td><td>8,07 € / m²</td><td>3,03 € / m²</td></tr></tbody></table>
+          <p class="ex">Exemple : un T2 de 45 m² à Bordeaux = 454,05 € + 136,35 € d'état des lieux, soit 590,40 € TTC au maximum.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="annex" id="annexes">
+      <p class="eyebrow">Barème complet</p>
+      <h2>Prestations complémentaires</h2>
+      <details open><summary>Frais annexes de gestion et travaux</summary><div class="tbl"><table class="t-an"><tbody><tr><td>Avenant au contrat de location</td><td>150 € TTC</td></tr><tr><td>Étude d'optimisation fiscale et comparatif de marché</td><td>150 € TTC</td></tr><tr><td>Mise en demeure du locataire</td><td>50 € TTC</td></tr><tr><td>Constitution d'un dossier contentieux</td><td>150 € TTC</td></tr><tr><td>Renouvellement de bail</td><td>100 € TTC bailleur · 60 € TTC locataire</td></tr><tr><td>Clôture du dossier en fin de mandat (locataire en place)</td><td>150 € TTC</td></tr><tr><td>Clôture du dossier en fin de mandat (locataire sorti)</td><td>80 € TTC</td></tr><tr><td>Envoi en recommandé</td><td>15 € TTC</td></tr><tr><td>Permis de louer : déplacement si nécessaire</td><td>45 € TTC par demande</td></tr><tr><td>Travaux de plus de 500 € TTC</td><td>8,5 % TTC, minimum 80 € TTC</td></tr><tr><td>Gestion du mobilier (meublé)</td><td>72 € TTC / heure</td></tr><tr><td>Vacation horaire (aide administrative)</td><td>75 € TTC / heure</td></tr></tbody></table></div></details>
+      <details><summary>Prestations sur demande et assurances</summary><div class="tbl"><table class="t-an"><tbody><tr><td>Assemblée générale de copropriété (présentiel)</td><td>75 € TTC / heure</td></tr><tr><td>Assemblée générale de copropriété (visio)</td><td>60 € TTC / heure</td></tr><tr><td>Commission de conciliation</td><td>180 € TTC (forfait 3 h)</td></tr><tr><td>Sinistre PNO : expertise ou déplacement</td><td>90 € TTC</td></tr><tr><td>Sinistre PNO : clôture du dossier chantier</td><td>100 € TTC</td></tr><tr><td>Petites interventions (ampoule, poignée, joints…), main d'œuvre</td><td>55 € TTC / heure</td></tr><tr><td>Détecteur de fumée, fourniture et pose</td><td>40 € TTC</td></tr><tr><td>Assurance PNO copropriété</td><td>95 € TTC / an</td></tr></tbody></table></div></details>
+      <details><summary>Parkings, garages et locaux professionnels</summary><div class="tbl"><table class="t-an"><tbody><tr><td>Bail parking ou garage : bailleur</td><td>Offert</td></tr><tr><td>Bail parking ou garage : preneur</td><td>1 mois de loyer CC</td></tr><tr><td>Local commercial ou professionnel : bailleur</td><td>10 % HT du loyer annuel HC</td></tr><tr><td>Local commercial ou professionnel : locataire</td><td>30 % HT du loyer annuel HC</td></tr></tbody></table></div></details>
+      <p class="dl"><a class="btn btn-o" href="#">Télécharger la grille tarifaire (PDF, mai 2026)</a> <span class="small">Grille en vigueur, affichée conformément à l'arrêté du 10 janvier 2017.</span></p>
+    </section>
+
+    <section class="faq" id="faq">
+      <h2>Questions sur nos honoraires</h2>
+      <details open><summary>Comment sont prélevés les honoraires de gestion ?</summary><p>Ils sont calculés sur les sommes réellement encaissées (loyer et charges) et déduits chaque mois avant le reversement de votre loyer. <span class="todo">[À préciser : le minimum de 39 € s'applique-t-il si aucun loyer n'est encaissé ?]</span></p></details>
+      <details><summary>Pourquoi « dès 5,9 % » ?</summary><p>Le taux dépend du loyer : 6,9 % jusqu'à 800 €, 6,4 % de 801 à 1 700 €, 5,9 % au-delà. Le simulateur ci-dessus vous donne votre taux exact.</p></details>
+      <details><summary>Les honoraires sont-ils déductibles de mes impôts ?</summary><p>Au régime réel, les frais de gestion et la garantie loyers impayés sont déductibles de vos revenus fonciers. Au micro-foncier, l'abattement forfaitaire les couvre déjà.</p></details>
+      <details><summary>Y a-t-il une durée d'engagement ?</summary><p><span class="todo">[À préciser : durée du mandat de gestion et conditions de résiliation.]</span> Les offres de lancement sont réservées aux biens confiés avec engagement.</p></details>
+      <details><summary>Combien paiera mon locataire ?</summary><p>Ses honoraires sont plafonnés par la loi : à Bordeaux, 10,09 € par m² pour la visite, le dossier et le bail, et 3,03 € par m² pour l'état des lieux d'entrée.</p></details>
+    </section>
+  </div>
+</div>
+
+    <div class="cta">
+      <div><h3>Un devis précis pour votre bien</h3><p>Gratuit et sans engagement : nous estimons votre loyer et vos honoraires exacts.</p></div>
+      <div class="btns"><a class="btn btn-w" href="../contact/">Demander mon devis</a><a class="btn btn-wo" href="../contact/">Nous contacter</a></div>
+    </div>
+  </div>
+</div>
+
+<footer class="gut">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="logo" href="../accueil/" aria-label="Casao, accueil"><b>casao</b><span>GESTION LOCATIVE</span></a>
+        <p>Propriétaires sereins. Gestion 100 % déléguée.<br>16 place des Quinconces, 33000 Bordeaux</p>
+        <div class="soc"><a href="https://www.instagram.com/casao.immo/">Instagram</a><a href="https://wa.me/33756884099">WhatsApp</a></div>
+      </div>
+      <div><h5>Services</h5><ul><li><a href="../gestion-locative-bordeaux/">Gestion locative</a></li><li><a href="../location/">Louer un bien</a></li><li><a href="../tarifs/">Tarifs</a></li><li><a href="../parrainage/">Parrainage</a></li></ul></div>
+      <div><h5>Casao</h5><ul><li><a href="../a-propos/">À propos</a></li><li><a href="../nos-outils/">Nos outils</a></li><li><a href="https://casao.fr/blog/">Blog</a></li><li><a href="../contact/">Contact</a></li></ul></div>
+      <div><h5>Contact</h5><ul><li>contact@casao.fr</li><li>07 56 88 40 99</li><li><a href="https://app.oskar.immo/auth/login/">Espace client</a></li><li><a href="../alerte-fraudes/">Alerte fraudes</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 Casao SAS</span><span><a href="../mentions-legales/">Mentions légales</a> · <a href="../politique-de-confidentialite/">Politique de confidentialité</a></span></div>
+  </div>
+</footer>
+
+<nav class="bnav" aria-label="Navigation mobile">
+  <a href="../accueil/"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Accueil</a>
+  <a href="../gestion-locative-bordeaux/"><svg viewBox="0 0 24 24"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6"/><path d="M9 11h6"/></svg>Gestion</a>
+  <a href="../contact/"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H8l-4 4z"/></svg>Contact</a>
+  <a href="https://app.oskar.immo/auth/login/"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Espace client</a>
+</nav>
+
+<div class="mock">Maquette · proposition de refonte</div>
+
+<script src="../assets/casao.js"></script>
+<script>
+(function(){
+  var L=document.getElementById('c-loyer'),R=document.getElementById('c-range'),G=document.getElementById('c-gli'),O=document.getElementById('c-off');
+  function eur(x){return Math.round(x).toLocaleString('fr-FR')+' €'}
+  function up(src){
+    if(src===R)L.value=R.value; else R.value=Math.min(3000,Math.max(300,+L.value||0));
+    var l=Math.max(0,+L.value||0),t,tr;
+    if(l<=800){t=.069;tr='tranche jusqu\'à 800 €'}else if(l<=1700){t=.064;tr='tranche 801 € à 1 700 €'}else{t=.059;tr='tranche à partir de 1 701 €'}
+    var m=Math.max(l*t,39),min=l*t<39,g=G.checked?l*.025:0,mm=m+g,an=mm*12-(O.checked?m*2:0);
+    document.getElementById('o-taux').textContent=(t*100).toFixed(1).replace('.',',')+' %';
+    document.getElementById('o-tr').textContent=min?'minimum mensuel appliqué':tr;
+    document.getElementById('o-mois').textContent=eur(mm);
+    document.getElementById('o-an').textContent=eur(an);
+    document.getElementById('o-mel').textContent=O.checked?'Offerte':eur(l*.8);
+    document.getElementById('o-note').textContent=(O.checked?'Sur un an, 2 mois de gestion offerts déduits. ':'')+(G.checked?'Garantie loyers impayés incluse (2,5 %). ':'')+'Minimum : 39 € TTC par mois et par bien. Honoraires déductibles au régime réel.';
+  }
+  [L,R,G,O].forEach(function(e){e.addEventListener('input',function(){up(e)});e.addEventListener('change',function(){up(e)})});
+  document.getElementById('cf').addEventListener('submit',function(e){e.preventDefault()});
+  up(L);
+})();
+</script>
+
+</body>
+</html>
