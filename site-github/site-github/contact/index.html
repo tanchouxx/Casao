@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Casao – Contact</title>
+<link rel="stylesheet" href="../assets/casao.css">
+</head>
+<body>
+
+<div class="alert gut">Fausses annonces, faux contacts : <a href="../alerte-fraudes/">nos conseils de vigilance</a></div>
+
+<header class="gut">
+  <div class="wrap">
+    <div class="hd">
+      <a class="logo" href="../accueil/" aria-label="Casao, accueil"><b>casao</b><span>GESTION LOCATIVE</span></a>
+      <nav class="top" aria-label="Navigation principale">
+        <a class="lk" href="../gestion-locative-bordeaux/">Gestion locative</a>
+        <a class="lk" href="../location/">Louer</a>
+        <a class="lk" href="../tarifs/">Tarifs</a>
+        <a class="lk" href="../nos-outils/">Nos outils</a>
+        <a class="lk" href="../contact/">Contact</a>
+        <a class="btn btn-o" href="https://app.oskar.immo/auth/login/">Se connecter</a>
+        <a class="btn btn-g" href="../contact/">Confier mon bien</a>
+        <button class="burger" id="burger" aria-expanded="false" aria-controls="mnav">Menu</button>
+      </nav>
+    </div>
+    <div class="mnav" id="mnav">
+      <a href="../gestion-locative-bordeaux/">Gestion locative</a>
+      <a href="../location/">Louer</a>
+      <a href="../tarifs/">Tarifs</a>
+      <a href="../nos-outils/">Nos outils</a>
+      <a href="../contact/">Contact</a>
+      <a href="https://app.oskar.immo/auth/login/">Se connecter (espace client)</a>
+    </div>
+  </div>
+</header>
+
+<div class="hero gut contact-hero ph-hero" style="--hero:url('../img/site/accueil-1.jpg')">
+  <div class="wrap">
+    <div class="deco" aria-hidden="true">@</div>
+    <div class="crumb"><a href="../accueil/">Accueil</a> &nbsp;›&nbsp; Contact</div>
+    <p class="kicker">Parlons de votre bien</p>
+    <h1>Contactez Casao, votre<br>agence de gestion locative<br>à Bordeaux</h1>
+    <p class="lead">Mise en location, gestion déléguée, question sur un logement : une personne de l'équipe vous répond sous 24 h ouvrées. Échange gratuit et sans engagement.</p>
+    <div class="meta"><span class="pill">Réponse sous 24 h ouvrées</span><span class="pill">Sans engagement</span><span class="pill">Bordeaux Métropole</span></div>
+  </div>
+</div>
+
+<div class="gut">
+  <div class="wrap">
+    <div class="keys chans">
+      <div class="key"><div class="l">Appeler</div><div class="n num tel">07 56 88 40 99</div><p>Du lundi au vendredi, <span class="todo">[horaires]</span>.</p></div>
+      <a class="key" href="https://wa.me/33756884099"><div class="l">WhatsApp</div><div class="n">Écrire sur WhatsApp</div><p>Même numéro que notre ligne téléphonique.</p></a>
+      <div class="key"><div class="l">E-mail</div><div class="n">contact@casao.fr<button class="copy" data-copy="contact@casao.fr">Copier</button></div><p>Pour nous envoyer des documents.</p></div>
+    </div>
+
+    <div class="ct-grid">
+      <section class="ct-form" id="formulaire">
+        <h2>Écrivez-nous</h2>
+        <div class="seg" role="tablist" aria-label="Vous êtes">
+          <button role="tab" aria-selected="true" class="on" data-p="proprio" id="tab-proprio">Propriétaire</button>
+          <button role="tab" aria-selected="false" data-p="candidat" id="tab-candidat">Je cherche un logement</button>
+          <button role="tab" aria-selected="false" data-p="locataire" id="tab-locataire">Locataire Casao</button>
+        </div>
+        <form id="cform" novalidate>
+          <p class="hint" data-for="proprio">Mise en location ou gestion complète : décrivez votre bien, nous vous rappelons avec une proposition claire.</p>
+          <p class="hint" data-for="candidat" hidden>Une question sur une annonce ou une visite ? Nos biens disponibles sont sur la page <a class="lnk" href="../location/">Louer</a>. Le dossier de location est gratuit.</p>
+          <p class="hint" data-for="locataire" hidden>Pour une demande d'intervention, un document ou votre quittance, passez de préférence par votre <a class="lnk" href="https://app.oskar.immo/auth/login/">espace client</a>.</p>
+          <div class="frow">
+            <div class="fld"><label for="f-nom">Nom et prénom *</label><input id="f-nom" name="nom" autocomplete="name" required></div>
+            <div class="fld"><label for="f-mail">E-mail *</label><input id="f-mail" name="mail" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="frow">
+            <div class="fld"><label for="f-tel">Téléphone <span class="opt">(pour être rappelé)</span></label><input id="f-tel" name="tel" type="tel" autocomplete="tel"></div>
+            <div class="fld"><label for="f-quand">Quand vous joindre ?</label><select id="f-quand" name="quand"><option>Indifférent</option><option>Matin</option><option>Midi</option><option>Fin de journée</option></select></div>
+          </div>
+          <div class="frow" data-for="proprio">
+            <div class="fld"><label for="f-type">Votre bien</label><select id="f-type" name="type"><option>Appartement</option><option>Maison</option><option>Studio</option><option>Autre</option></select></div>
+            <div class="fld"><label for="f-ville">Commune</label><input id="f-ville" name="ville" placeholder="ex. Bordeaux, Talence…" autocomplete="address-level2"></div>
+          </div>
+          <div class="fld" data-for="proprio"><span class="lbl">Votre besoin</span>
+            <div class="checks">
+              <label><input type="checkbox" name="besoin" value="mise"> Mise en location</label>
+              <label><input type="checkbox" name="besoin" value="gestion" checked> Gestion complète</label>
+              <label><input type="checkbox" name="besoin" value="loyer"> Estimer le loyer</label>
+              <label><input type="checkbox" name="besoin" value="changer"> Changer d'agence</label>
+            </div>
+          </div>
+          <div class="fld"><label for="f-msg">Votre message *</label><textarea id="f-msg" name="msg" rows="4" required placeholder="Surface, date de disponibilité, questions…"></textarea></div>
+          <p class="rgpd">Vos données servent uniquement à répondre à votre demande et sont conservées 3 ans au plus. Voir notre <a class="lnk" href="../politique-de-confidentialite/">politique de confidentialité</a>.</p>
+          <button class="btn btn-g big" type="submit">Envoyer ma demande</button>
+          <div class="sent" id="sent" role="status" aria-live="polite" hidden><b>Message prêt à être envoyé.</b> Sur le site, vous recevrez un e-mail de confirmation et nous vous répondons sous 24 h ouvrées. <span class="todo">(Aperçu de maquette : aucun envoi réel.)</span></div>
+        </form>
+      </section>
+
+      <aside class="ct-side">
+        <section class="rdv">
+          <p class="l">Prendre rendez-vous</p>
+          <h2>Un échange au téléphone ou en visio <span class="todo">[durée]</span></h2>
+          <p>Choisissez votre créneau en ligne. Idéal pour faire le point sur votre bien et nos honoraires.</p>
+          <div class="cal" aria-hidden="true">
+            <div class="cal-h"><span>Semaine prochaine</span><span class="todo">Calendly</span></div>
+            <div class="cal-d"><span>Lun</span><span>Mar</span><span>Mer</span><span>Jeu</span><span>Ven</span></div>
+            <div class="cal-s"><i>9:30</i><i class="off">10:00</i><i>11:00</i><i>14:00</i><i class="off">16:30</i><i>9:00</i><i>10:30</i><i class="off">15:00</i><i>17:00</i><i>12:00</i></div>
+          </div>
+          <a class="btn btn-w" href="#formulaire">Choisir un créneau</a>
+        </section>
+        <section class="zone">
+          <p class="l">Zone d'intervention</p>
+          <h2>Bordeaux et sa métropole</h2>
+          <ul class="towns"><li>Bordeaux</li><li>Mérignac</li><li>Pessac</li><li>Talence</li><li>Bègles</li><li>Le Bouscat</li><li>Cenon</li><li>Lormont</li><li>Villenave-d'Ornon</li></ul>
+          <p class="small todo">[Liste des communes à confirmer]</p>
+        </section>
+        <section class="trust">
+          <p class="l">Une agence encadrée</p>
+          <ul>
+            <li><b>Carte professionnelle</b> CPI 3301 2026 000 000 047</li>
+            <li><b>Garantie financière</b> Galian-SMABTP</li>
+            <li><b>Honoraires</b> publiés sur la page <a class="lnk" href="../tarifs/">Tarifs</a></li>
+          </ul>
+          <p class="small">Siège : 16 place des Quinconces, 33000 Bordeaux · <span class="todo">[accueil sur rendez-vous ?]</span></p>
+        </section>
+      </aside>
+    </div>
+
+    <figure class="photo-band" style="--pb:url('../img/site/loue-t3-victoire.jpg')"><figcaption><b>Parlons de<br>votre bien.</b><span>Réponse sous 24 h ouvrées</span></figcaption></figure>
+    <section class="faq" id="faq">
+      <h2>Questions fréquentes</h2>
+      <details open><summary>Sous combien de temps répondez-vous ?</summary><p>Sous 24 h ouvrées, par téléphone ou par e-mail selon votre préférence.</p></details>
+      <details><summary>Intervenez-vous uniquement à Bordeaux ?</summary><p>Nous intervenons à Bordeaux et dans les communes de la métropole (Mérignac, Pessac, Talence, Bègles…). Pour un bien un peu plus loin, contactez-nous : nous vous dirons si nous pouvons l'accompagner. <span class="todo">[à confirmer]</span></p></details>
+      <details><summary>Le premier échange est-il payant ?</summary><p>Non. Le premier échange et notre proposition de gestion sont gratuits et sans engagement.</p></details>
+      <details><summary>Que préparer avant de nous appeler ?</summary><p>L'adresse et la surface du bien, s'il est vide ou meublé, sa date de disponibilité et, si vous les avez, vos diagnostics. Notre guide <a class="lnk" href="../blog/">Documents à fournir par le propriétaire</a> vous aide à tout rassembler.</p></details>
+      <details><summary>Mon bien est déjà géré par une autre agence, puis-je changer ?</summary><p>Oui, le changement est possible en respectant le préavis de votre mandat. Casao s'occupe des démarches avec votre ancienne agence.</p></details>
+      <details><summary>Je cherche un logement : comment candidater ?</summary><p>Nos biens disponibles sont publiés sur la page Louer. Le dossier de location est gratuit, et nous ne demandons jamais d'argent avant la visite. Voir aussi notre page <a class="lnk" href="../alerte-fraudes/">Alerte fraudes</a>.</p></details>
+    </section>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<footer class="gut">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="logo" href="../accueil/" aria-label="Casao, accueil"><b>casao</b><span>GESTION LOCATIVE</span></a>
+        <p>Propriétaires sereins. Gestion 100 % déléguée.<br>16 place des Quinconces, 33000 Bordeaux</p>
+        <div class="soc"><a href="https://www.instagram.com/casao.immo/">Instagram</a><a href="https://wa.me/33756884099">WhatsApp</a></div>
+      </div>
+      <div><h5>Services</h5><ul><li><a href="../gestion-locative-bordeaux/">Gestion locative</a></li><li><a href="../location/">Louer un bien</a></li><li><a href="../tarifs/">Tarifs</a></li><li><a href="../parrainage/">Parrainage</a></li></ul></div>
+      <div><h5>Casao</h5><ul><li><a href="../a-propos/">À propos</a></li><li><a href="../nos-outils/">Nos outils</a></li><li><a href="../blog/">Blog</a></li><li><a href="../contact/">Contact</a></li></ul></div>
+      <div><h5>Contact</h5><ul><li>contact@casao.fr</li><li>07 56 88 40 99</li><li><a href="https://app.oskar.immo/auth/login/">Espace client</a></li><li><a href="../alerte-fraudes/">Alerte fraudes</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 Casao SAS</span><span><a href="../mentions-legales/">Mentions légales</a> · <a href="../politique-de-confidentialite/">Politique de confidentialité</a></span></div>
+  </div>
+</footer>
+
+<nav class="bnav" aria-label="Navigation mobile">
+  <a href="../accueil/"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Accueil</a>
+  <a href="../gestion-locative-bordeaux/"><svg viewBox="0 0 24 24"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6"/><path d="M9 11h6"/></svg>Gestion</a>
+  <a href="../contact/"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H8l-4 4z"/></svg>Contact</a>
+  <a href="https://app.oskar.immo/auth/login/"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Espace client</a>
+</nav>
+
+<div class="mock">Maquette · proposition de refonte</div>
+
+<script src="../assets/casao.js"></script>
+<script src="../assets/anim.js"></script>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.seg [role=tab]'));
+  function show(p){
+    tabs.forEach(function(t){var on=t.dataset.p===p;t.classList.toggle('on',on);t.setAttribute('aria-selected',on)});
+    document.querySelectorAll('#cform [data-for]').forEach(function(el){el.hidden=el.dataset.for!==p});
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){show(t.dataset.p)})});
+  var f=document.getElementById('cform'),sent=document.getElementById('sent');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();var bad=null;
+    [].slice.call(f.querySelectorAll('[required]')).forEach(function(i){var ok=i.value.trim()&&(i.type!=='email'||/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(i.value));i.classList.toggle('err',!ok);if(!ok&&!bad)bad=i});
+    if(bad){bad.focus();sent.hidden=true;return}
+    sent.hidden=false;
+  });
+})();
+</script>
+
+</body>
+</html>
